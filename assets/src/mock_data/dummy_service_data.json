@@ -1,0 +1,35 @@
+[
+  {
+    "name": "customer1",
+    "username": "customer1@jb1.com",
+    "password": "Password1",
+    "accountManagers": [
+      "sr1@jb.com"
+    ]
+  },
+  {
+    "name": "customer2",
+    "username": "customer2@jb1.com",
+    "password": "Password2",
+    "accountManagers": [
+      "sr1@jb.com"
+    ]
+  },
+  {
+    "name": "customer3",
+    "username": "customer3@jb1.com",
+    "password": "Password3",
+    "accountManagers": [
+      "sr1@jb.com",
+      "sr2@jb.com"
+    ]
+  },
+  {
+    "name": "customer4",
+    "username": "customer4@jb1.com",
+    "password": "Password4",
+    "accountManagers": [
+      "sr2@jb.com"
+    ]
+  }
+]

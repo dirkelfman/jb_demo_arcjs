@@ -1,0 +1,14 @@
+{
+    "mappings": {},
+    "validators": {},
+    "routes": [
+        {
+            "template": "svc/b2blogins",
+            "defaults": {},
+            "internalRoute": "Arcjs",
+            "functionId": "http.storefront.routes",
+            "mappings": {},
+            "validators": {}
+        }
+    ]
+}

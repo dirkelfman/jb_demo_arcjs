@@ -1,0 +1,19 @@
+{
+  "exports": [
+    {
+      "id": "http.commerce.customer.authTickets.createUserAuthTicket.before",
+      "virtualPath": "./dist\\commerce.customer.manifest.all.js",
+      "actionId": "http.commerce.customer.authTickets.createUserAuthTicket.before"
+    },
+    {
+      "id": "embedded.platform.applications.install",
+      "virtualPath": "./dist\\platform.applications.manifest.all.js",
+      "actionId": "embedded.platform.applications.install"
+    },
+    {
+      "id": "http.storefront.routes",
+      "virtualPath": "./dist\\storefront.manifest.all.js",
+      "actionId": "http.storefront.routes"
+    }
+  ]
+}

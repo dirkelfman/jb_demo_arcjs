@@ -1,0 +1,17 @@
+{
+  "nameSpace": "{namespace}",
+    "name": "sales_reps",
+    "entityListFullName" :  "sales_reps@{namespace}",
+  "contextLevel": "Tenant",
+  "useSystemAssignedId": false,
+  "idProperty": {
+    "propertyName": "email",
+    "dataType": "string"
+  },
+  "isVisibleInStorefront": false,
+  "isLocaleSpecific": false,
+  "isShopperSpecific": false,
+  "isSandboxDataCloningSupported": true,
+  "views": [],
+  "usages": ["entityManager"]
+}
