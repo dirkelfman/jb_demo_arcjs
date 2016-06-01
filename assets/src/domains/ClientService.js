@@ -46,7 +46,7 @@ ClientService.prototype.getList = function(request) {
             ret.clients = res.clients.slice(offset, offset + pageSize).map(function(customer) {
                 var password = cryptoHelper.decrypt(customer.password);
                 customer.token = tokenFactory.createToken(customer.email, password);
-                customer.host = 'https://' + customer.segment === 'east' ? me._eastHost : me._westHost;
+                customer.host = (customer.segment === 'east') ? me._eastHost : me._westHost;
                 return customer;
             });
         }

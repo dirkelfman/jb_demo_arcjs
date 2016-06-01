@@ -11,7 +11,7 @@ function ClientService(context) {
     this._context = context;
     this._entityListName = 'sales_reps@' + appInfo.namespace;
      this._westHost = (context.configuration || {}).westHost;
-                this._eastHost = (context.configuration || {}).westHost;
+     this._eastHost = (context.configuration || {}).eastHost;
 }
 
 ClientService.prototype.getList = function(request) {
@@ -47,7 +47,7 @@ ClientService.prototype.getList = function(request) {
             ret.clients = res.clients.slice(offset, offset + pageSize).map(function(customer) {
                 var password = cryptoHelper.decrypt(customer.password);
                 customer.token = tokenFactory.createToken(customer.email, password);
-                customer.host = 'https://' + customer.segment === 'east' ? me._eastHost : me._westHost;
+                customer.host = (customer.segment === 'east') ? me._eastHost : me._westHost;
                 return customer;
             });
         }
